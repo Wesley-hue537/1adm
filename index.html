@@ -1,56 +1,50 @@
-mfunction draw() {
-    background(220);
-    circle(200, 200, 300);
-    circle(150, 150, 60);
-    circle(250, 150, 60);
-    line(300, 150, 300, 250);
-    
-    if (mouseIsPressed) {
+<!DOCTYPE html>
+<html>
+<head>
+<title>Site Animado</title>
 
-    }
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    overflow: hidden;
 }
-function draw() {
-    background(220);
-    circle(200, 200, 300);
-    circle(150, 150, 60);
-    circle(250, 150, 60);
-    line(300, 150, 300, 250);
-    
-    if (mouseIsPressed) {
-        console.log(mouseX, mouseY);
-    }
-}
-function draw() {
-    background(220);
-    circle(200, 200, 300);
-    circle(150, 150, 60);
-    circle(250, 150, 60);
-    line(150, 270, 250, 270);
-    
-    if (mouseIsPressed) {
-        console.log(mouseX, mouseY);
-    }
-}
-function draw() {
-    background(220);
-    circle(200, 200, 300);
-    circle(150, 150, 60);
-    circle(250, 150, 60);
-    line(150, 270, 250, 235);
-    
-    if (mouseIsPressed) {
-        console.log(mouseX, mouseY);
-    }
-}
-function draw() {
-    background(220);
-    circle(200, 200, 300);
-    circle(150, 150, 60);
-    circle(250, 150, 60);
-    line(150, 270, 250, 270);
-    triangle(200, 180, 170, 220, 220, 220);
 
-    if (mouseIsPressed) {
-        console.log(mouseX, mouseY);
+.circulo {
+    width: 100px;
+    height: 100px;
+    background: #00ffcc;
+    border-radius: 50%;
+    position: absolute;
+    animation: mover 4s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    50% {
+        left: 70%;
+        top: 40%;
+        background: #ff0066;
+    }
+
+    100% {
+        left: 80%;
+        top: 80%;
+        background: #ffff00;
     }
 }
+</style>
+
+</head>
+
+<body>
+
+<div class="circulo"></div>
+
+</body>
+</html>
